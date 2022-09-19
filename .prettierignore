@@ -5,7 +5,6 @@
 **/.yarn
 **/public
 **/.next
-**/.husky
 **/public
 **/build
 
