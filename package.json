@@ -6,7 +6,7 @@
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write  .",
-    "postinstall": "husky install"
+    "prepare": "husky install"
   },
   "engines": {
     "node": ">=16.17.0",
@@ -41,7 +41,6 @@
     "eslint-config-next": "12.3.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "pinst": "^3.0.0",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
     "tailwindcss": "^3.1.2",
