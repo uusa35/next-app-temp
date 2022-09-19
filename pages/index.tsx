@@ -3,8 +3,6 @@ import React, {
   useContext,
   useState,
   useEffect,
-  useReducer,
-  useCallback,
 } from 'react';
 import { MainContext } from '../components/Layouts/MainLayout';
 import InputField from '../components/InputField';
@@ -12,15 +10,13 @@ import TodosList from '../components/TodosList';
 import { addToDo } from '../redux/slices/todosSlice';
 import { disableBootStrapped } from '../redux/slices/bootStrappedSlice';
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
-import { RootState } from '../redux/store';
 import {
   getUsers,
   getUser,
-  usersSlice,
   selectedUsers,
 } from '../redux/slices/usersSlice';
 import UsersList from '../components/UsersList';
-import { MainContextType, Users } from '../types';
+import { MainContextType } from '../types';
 import { GetServerSideProps } from 'next';
 import { useGetAllQuery } from '../redux/api/productApi';
 
