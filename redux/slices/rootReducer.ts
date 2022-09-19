@@ -6,7 +6,6 @@ import { settingsSlice } from './settingsSlice';
 import { localeSlice } from './localeSlice';
 import { translationsSlice } from './translationsSlice';
 
-
 import { bootStrappedSlice } from './bootStrappedSlice';
 import { productApi } from './../api/productApi';
 
