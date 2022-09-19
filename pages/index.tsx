@@ -1,20 +1,12 @@
 import type { NextPage } from 'next';
-import React, {
-  useContext,
-  useState,
-  useEffect,
-} from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { MainContext } from '../components/Layouts/MainLayout';
 import InputField from '../components/InputField';
 import TodosList from '../components/TodosList';
 import { addToDo } from '../redux/slices/todosSlice';
 import { disableBootStrapped } from '../redux/slices/bootStrappedSlice';
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
-import {
-  getUsers,
-  getUser,
-  selectedUsers,
-} from '../redux/slices/usersSlice';
+import { getUsers, getUser, selectedUsers } from '../redux/slices/usersSlice';
 import UsersList from '../components/UsersList';
 import { MainContextType } from '../types';
 import { GetServerSideProps } from 'next';
